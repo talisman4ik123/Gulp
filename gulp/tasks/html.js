@@ -14,6 +14,7 @@ export const html = () => {
         )
         .pipe(fileinclude())
         .pipe(app.plugins.replace(/@img\//g, 'images/'))
+        .pipe(app.plugins.replace(/@icon\//g, 'svgicons/'))
         .pipe(
             app.plugins.if(
                 app.isBuild,
