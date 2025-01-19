@@ -1,26 +1,8 @@
-import {isWebp} from "./libs/webpImg.js";
-isWebp();
+import { sortBaits } from "./libs/baitsSort.js";
 
+document.querySelector("textarea").addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = `${this.scrollHeight}px`;
+});
 
-// import {formPopup} from "./libs/popupForm.js"
-// formPopup(openBtns, fromBG, form, formBody);
-
-
-// import {blurElements} from "./libs/blurElements.js";
-// blurElements();
-
-
-// import {isMobile} from "./libs/isMobile.js";
-// if (isMobile.any()) {
-//     document.body.classList.add('_mobile');
-// } else {
-//     document.body.classList.add('_pc');
-// }
-
-
-//import {pagination} from "./libs/pagination.js";
-//pagination(list, item, itemCount);
-
-
-//import Swiper, { Navigation, Pagination } from 'swiper';
-//const swiper = new Swiper();
+sortBaits();

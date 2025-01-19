@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title":"Квест наживки"})
+
+<body>
+    <section class="baits">
+        <div class="baits__container">
+            <div class="baits-inner">
+                <form class="bait-form">
+                    <legend class="bait-form__legend title">Исходные наживки</legend>
+                    <textarea name="" id="" class="bait-form__textarea">
+    
+                    </textarea>
+                    <button class="bait-form__btn btn" id="sort-btn">Отсортировать</button>
+                </form>
+
+                <form class="sort-form">
+                    <legend class="sort-form__legend title">Отсортированные наживки</legend>
+                    <div class="sort-form-box" id="baits-sort-box"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

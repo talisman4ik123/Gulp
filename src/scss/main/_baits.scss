@@ -1,0 +1,80 @@
+.baits {
+    padding-top: 50px;
+}
+.container {
+}
+.baits-inner {
+    display: flex;
+}
+.bait-form {
+
+    margin-right: 150px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__textarea {
+        width: 250px;
+        border: 1px solid black;
+        padding: 15px;
+        resize: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    &__btn {
+        width: 120px;
+    }
+
+    &__legend {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.sort-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__legend {
+        margin-bottom: 10px;
+    }
+
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.sort-form-box .sort-list {
+    border: 1px solid rgb(5, 237, 190);
+    padding: 10px;
+    min-width: 350px;
+    margin: 10px;
+}
+
+.sort-form-box .sort-list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.sort-form-box .sort-list__item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-form-box .sort-list__item .sort-list__span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sort-form-box .sort-list__item .sort-list__btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
